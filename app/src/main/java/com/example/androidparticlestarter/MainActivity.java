@@ -5,6 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.IOException;
 
@@ -33,10 +35,22 @@ public class MainActivity extends AppCompatActivity {
     // MARK: Particle device
     private ParticleDevice mDevice;
 
+    TextView txtAnswer;
+    TextView txtQuez;
+    ImageView img;
+    TextView txtScores;
+
+    int score = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.txtAnswer = findViewById(R.id.txtAnswer);
+        this.img = findViewById(R.id.imageViewAct1);
+        this.txtQuez = findViewById(R.id.textOptions);
+        this.txtScores = findViewById(R.id.txtScores);
 
         // 1. Initialize your connection to the Particle API
         ParticleCloudSDK.init(this.getApplicationContext());
