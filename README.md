@@ -1,4 +1,4 @@
-## TeachMeShapes Platform: Android : Assignment 2
+## TeachMeShapes: Assignment 2
 ## Platform : Android.
 
 Student Name  | Student ID
